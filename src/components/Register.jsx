@@ -21,6 +21,20 @@ const Register = () => {
     const password = form.password.value;
     const photo = form.photo.value;
 
+    const createUser = (name, email, password, photo);
+    fetch("http://localhost:5000/user", {
+      method: "POST",
+      headers: {
+        "content-Type": "application/json",
+      },
+      body: JSON.stringify(createUser),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+
+    
     if (password.length < 6) {
       Swal.fire({
         title: "Try Again!",
