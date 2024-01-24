@@ -19,7 +19,12 @@ This is a simple React web application developed as a job task. The application 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
+   git clone https://github.com/AhsanPhero2022/simple-react-app.git
+   cd simple-react-app
+   npm install
+   npm run dev
 
 ## Live Link
+```
+Live Link: https://dubai-jobtask.web.app
+```

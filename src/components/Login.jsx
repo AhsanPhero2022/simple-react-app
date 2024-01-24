@@ -49,7 +49,7 @@ const Login = () => {
     googleLogin()
       .then((result) => {
         const loggedUser = result.user;
-navigate(from, { replace: true });
+        navigate(from, { replace: true });
         fetch("http://localhost:5000/user", {
           method: "POST",
           headers: {
@@ -61,6 +61,17 @@ navigate(from, { replace: true });
           .then((data) => {
             console.log(data);
           });
+
+          if (loggedUser) {
+            Swal.fire({
+              title: "Great!",
+  
+              text: "Successfully Login",
+              icon: "success",
+              imageWidth: 400,
+              imageHeight: 200,
+            });
+          }
       })
       .catch((error) => {
         console.log(error);
