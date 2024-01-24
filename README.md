@@ -1,8 +1,25 @@
-# React + Vite
+# React Web Application with Firebase Authentication and MongoDB Backend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a simple React web application developed as a job task. The application includes user authentication using Firebase and a MongoDB backend powered by Express.js. The frontend utilizes React.js, Tailwind CSS, and DaisyUI for a sleek and responsive user interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **User Authentication:** Firebase authentication is integrated to provide secure user login and registration.
+
+- **React.js Frontend:** The frontend is built with React.js, ensuring a dynamic and efficient user experience.
+
+- **Tailwind CSS and DaisyUI:** Tailwind CSS, along with DaisyUI components, is used for styling, providing a clean and modern design.
+
+- **MongoDB Backend:** The application utilizes MongoDB as the backend database, managed with Express.js, to store and retrieve data.
+
+## Getting Started
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+
+## Live Link
