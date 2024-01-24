@@ -6,12 +6,14 @@ const Header = () => {
     <div>
       <div className="navbar bg-base-100">
         <div className="navbar-start">
-          <a className="btn btn-ghost text-xl">Dreams Group</a>
+          <Link 
+          to='/'
+          className="btn btn-ghost text-xl">Dreams Group</Link>
         </div>
 
         <div className="navbar-center">
           <Link
-          to="login"
+          to="/login"
           className="btn">Login</Link>
         </div>
       </div>

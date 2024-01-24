@@ -1,15 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const Login = () => {
+const Register = () => {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Login now!</h1>
-          <p className="py-6 px-6">
-           Please login your email & password or google.
-          </p>
+          <h1 className="text-5xl font-bold">Register now!</h1>
+          
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form className="card-body">
@@ -18,8 +15,30 @@ const Login = () => {
                 <span className="label-text">Email</span>
               </label>
               <input
+                type="name"
+                placeholder="Enter your name"
+                className="input input-bordered"
+                required
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Email</span>
+              </label>
+              <input
                 type="email"
-                placeholder="email"
+                placeholder="Enter your email"
+                className="input input-bordered"
+                required
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Photo</span>
+              </label>
+              <input
+                type="url"
+                placeholder="photo url"
                 className="input input-bordered"
                 required
               />
@@ -30,36 +49,24 @@ const Login = () => {
               </label>
               <input
                 type="password"
-                placeholder="password"
+                placeholder="Your password"
                 className="input input-bordered"
                 required
               />
-             <div className="flex justify-between">
-             <label className="label">
+              <label className="label">
                 <a href="#" className="label-text-alt link link-hover">
                   Forgot password?
                 </a>
               </label>
-              <label className="label">
-                <Link
-                to='/register'
-                href="#" className="label-text-alt link link-hover underline">
-                  Do not have account? Go Register
-                </Link>
-              </label>
-             </div>
             </div>
             <div className="form-control mt-6">
               <button className="btn btn-primary">Login</button>
             </div>
           </form>
-          <div className="form-control px-8 pb-8">
-            <button className="btn btn-success">Google Login</button>
-          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Register;
